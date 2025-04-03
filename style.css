@@ -1,0 +1,78 @@
+body {
+    background-color:#dab2db ; /* Light Purple Background */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.heading {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff4b5c; /* Vibrant Solid Color */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.heading::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 3px;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.sort-button {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient Effect */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px; /* Rounded Corners */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* 3D Shadow */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sort-button:hover {
+    transform: scale(1.1); /* Slight Zoom on Hover */
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.controls label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.controls input[type="range"] {
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4b5c;
+}
