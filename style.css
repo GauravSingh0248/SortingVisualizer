@@ -3,6 +3,7 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
 }
+/* Heading Part */
 .heading {
     font-size: 28px;
     font-weight: 700;
@@ -25,7 +26,7 @@ body {
     border-radius: 3px;
 }
 
-
+/* Button Updations */
 
 .button-container {
     display: flex;
@@ -54,6 +55,8 @@ body {
 }
 
 
+/* Control for Speed and Size of array  */
+
 .controls {
     margin-top: 20px;
     text-align: center;
@@ -75,4 +78,15 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #ff4b5c;
+}
+
+
+/* Bars Container  */
+
+#bars-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+    margin-top: 40px;
 }
