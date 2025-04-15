@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="heading">
-        <h1>
-            SORTING ALGORITHM VISUALIZER
-        </h1>̥
+        <h1>SORTING ALGORITHM VISUALIZER</h1>
     </div>
-    <div class="butt̥on-container">
+    
+    <div class="button-container">
         <button class="sort-button">Bubble Sort</button>
         <button class="sort-button">Insertion Sort</button>
-        <button class="sort-button">Selec̥tion Sort</button>
+        <button class="sort-button">Selection Sort</button>
         <button class="sort-button">Merge Sort</button>
         <button class="sort-button">Quick Sort</button>
         <button class="sort-button">Heap Sort</button>
@@ -24,18 +23,33 @@
         <button class="sort-button">Radix Sort</button>
     </div>
     <br>
-    <div>̥
+    <div class="controls">
         <label for="size">Array Size:</label>
         <input type="range" id="size" min="10" max="100" value="50">
         <!-- <span id="sizeValue">50</span> -->
-    
+        
         <label for="speed">Sorting Speed:</label>
         <input type="range" id="speed" min="1" max="10" value="5">
         <!-- <span id="speedValue">5</span> -->
     </div>
-    <!-- Adding Chart or Bars  -->
-     <div id="bars-container"></div>
-     <script src="script.js"></script>
-
+    <div id="bars-container"></div>
+    <script src="script.js"></script>
+    <br>
+    <!-- Theme Dark / Light -->
+    <div class="theme-toggle">
+        <label for="theme">Theme:</label>
+        <select id="theme">
+            <option value="light">Light Mode</option>
+            <option value="dark">Dark Mode</option>
+        </select>
+    </div> 
+    <div class="sBox">
+        <div class="Sfeature">
+            <p>Number of Comparisons: <span id="comparisons">0</span></p>
+            <p>Time Complexity: <span id="time-complexity">-</span></p>
+            <p>Time Taken: <span id="time-taken">0</span> ms</p>
+        </div>
+    </div>
 </body>
+
 </html>

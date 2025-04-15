@@ -90,3 +90,48 @@ body {
     height: 300px;
     margin-top: 40px;
 }
+/* Time/comparison/Time Complexity */
+.sBox{
+    border:1px solid black;
+    margin:auto;
+    padding: 5px;
+    border-radius: 2px;
+}
+.Sfeature{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ff4b5c;
+    /* text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); */
+}
+
+/* Theme Light and Dark Mode */
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.theme-toggle label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff4b5c;
+}
+
+#theme {
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 2px solid #ff4b5c;
+    cursor: pointer;
+}
+
